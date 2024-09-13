@@ -1,0 +1,43 @@
+  # Area Of 2-D Shapes
+  # List of 2-D shapes: Square, Circle, Rectangle, Triangle, Kite, Parallelogram, Rhombus
+  shapes_list = ["Square", "Circle", "Rectangle", "Triangle", "Kite", "Parallelogram", "Rhombus"]
+  
+  def shape_Area_2D():
+    shape = input("Enter the shape: ")
+    if shape.lower() == "square":
+      l = int(input("Enter the length: "))
+      w = int(input("Enter the width: "))
+      area = l * w
+      return area
+    elif shape.lower() == "rectangle":
+      l = int(input("Enter the length: "))
+      w = int(input("Enter the width: "))
+      area = l * w
+      return area
+    elif shape.lower() == "triangle":
+      h = int(input("Enter the height: "))
+      b = int(input("Enter the length: "))
+      area = 0.5*b*h
+      return area
+    elif shape.lower() == "circle":
+      r = int(input("Enter the radius: "))
+      area = 2*(22/7)*r
+      return area
+    elif shape.lower() == "kite":
+      d1 = int(input("Enter the diagnol-1: "))
+      d2 = int(input("Enter the diagnol-2: "))
+      area = 0.5*d1*d2
+      return area
+    elif shape.lower() == "parallelogram":
+      b = int(input("Enter the base: "))
+      h = int(input("Enter the height: "))
+      area = b*h
+    elif shape.lower() == "rhombus":
+      d1 = int(input("Enter the diagnol-1: "))
+      d2 = int(input("Enter the diagnol-2: "))
+      area = (d1*d2)/2
+    else:
+      print("Entered shape is not in our database but we will add it in future")
+      return shape
+  func_ans = shape_Area_2D()
+  print(func_ans)
